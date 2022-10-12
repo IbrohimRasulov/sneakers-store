@@ -1,15 +1,18 @@
 {
-  "name": "sneakers-store-with-bulma",
+  "name": "sneakers-store",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "css-build": "node-sass --omit-source-map-url src/styles/sass/mystyles.scss src/styles/css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "dependencies": {
-    "bulma": "^0.9.4",
+    "bulma-start": "^0.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -17,6 +20,13 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "bulma": "^0.9.4",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
     "vite": "^3.1.0"
   }
 }
