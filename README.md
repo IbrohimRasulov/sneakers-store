@@ -1,1 +1,0 @@
-# sneakers-store-with-bulma
