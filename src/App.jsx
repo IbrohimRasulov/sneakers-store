@@ -1,5 +1,5 @@
 import './styles/sass/customVariables.scss'
-import Navbar from "./components/layout/Navbar.jsx";
+import Navbar from "./Layout/Navbar.jsx";
 
 const App = () => {
     return (
